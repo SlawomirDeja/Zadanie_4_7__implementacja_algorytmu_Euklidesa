@@ -14,12 +14,9 @@ public class Zadanie47ImplementacjaAlgorytmuEuklidesaApplication {
 
         if (a == 0 || b == 0) System.out.println("The greatest common divisor is equal to 1");
             else {
-                while (a != b) {
-                    System.out.println(a + " " + b);
-                    if (a > b) a -= b; else b -= a;
-                }
+                while (a != b) if (a > b) a -= b; else b -= a;
                 System.out.println("The greatest common divisor is equal to " + a);
-        }
+            }
     }
 
 }
